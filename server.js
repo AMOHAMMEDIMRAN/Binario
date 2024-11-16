@@ -5,6 +5,9 @@ import express from "express";
 // Import utils
 
 import binarioRoute from "./Routes/binarioRoute.js";
+import {
+  apiGuide,
+} from "./Controllers/binarioController.js";
 
 // Instance express
 
@@ -19,6 +22,8 @@ app.use(express.json());
 const PORT = 5000;
 
 // API routes
+
+app.get("/", apiGuide)
 
 app.use("/binario/api", binarioRoute);
 

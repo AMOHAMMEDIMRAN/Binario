@@ -8,15 +8,13 @@ import {
   stringToBinary,
   binaryToString,
   apiGuide,
-} from "../Controller/binarioController.js";
+} from "../Controllers/binarioController.js";
 
 // Instance express router
 
 const router = express.Router();
 
-// Home route
 
-router.get("/", apiGuide);
 
 // String to binary route
 

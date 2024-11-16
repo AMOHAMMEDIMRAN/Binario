@@ -1,6 +1,13 @@
-# Binario API
+Here's your updated **README.md** with the GitHub clone link included:
 
-A simple Node.js API for converting strings to binary and binary to strings. This project is designed using Express.js with a clean architecture.
+---
+
+```markdown
+# Binary Converter API
+
+Live Demo: [Binary Converter API](https://binarioo.onrender.com/)
+
+A lightweight Node.js API for converting strings to binary and binary to strings. Built with Express.js, this project includes endpoints for seamless conversions and an API guide available on the root route (`/`).
 
 ---
 
@@ -8,14 +15,14 @@ A simple Node.js API for converting strings to binary and binary to strings. Thi
 
 - Convert a **string** to its **binary** representation.
 - Convert **binary** back to a **string**.
-- Lightweight and easy to use.
-- Includes an API guide available at the `/` route.
+- In-app API guide available at the `/` route.
+- Designed with a simple and clean structure.
 
 ---
 
 ## Prerequisites
 
-Before you begin, ensure you have the following installed on your machine:
+Before starting, ensure you have the following installed:
 
 - [Node.js](https://nodejs.org/) (version 16 or higher recommended)
 - [npm](https://www.npmjs.com/) (comes with Node.js)
@@ -27,78 +34,106 @@ Before you begin, ensure you have the following installed on your machine:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/<your-username>/<repo-name>.git
-   cd <repo-name>
-   Install dependencies:
+   git clone https://github.com/AMOHAMMEDIMRAN/Binario.git
+   cd Binario
    ```
 
-bash
-Copy code
-npm install
-Start the server:
+2. Install dependencies:
 
-bash
-Copy code
-npm start
-Access the guide:
+   ```bash
+   npm install
+   ```
 
-Open your browser and navigate to http://localhost:5000.
+3. Start the server:
 
-Usage
-Endpoints
+   ```bash
+   npm start
+   ```
 
-1. Convert String to Binary
-   Endpoint: POST /binario/api/string-to-binary
-   Request Body:
-   json
-   Copy code
-   {
-   "text": "hello"
-   }
-   Response:
-   json
-   Copy code
-   {
-   "binary": "1101000 1100101 1101100 1101100 1101111"
-   }
-2. Convert Binary to String
-   Endpoint: POST /binario/api/binary-to-string
-   Request Body:
-   json
-   Copy code
-   {
-   "binary": "1101000 1100101 1101100 1101100 1101111"
-   }
-   Response:
-   json
-   Copy code
-   {
-   "text": "hello"
-   }
-   Folder Structure
-   bash
-   Copy code
-   ├── controllers
-   │ └── binarioController.js # Contains logic for string-to-binary and binary-to-string conversion
-   ├── middleware
-   │ └── asyncHandler.js # Middleware for handling async errors
-   ├── routes
-   │ └── binarioRoutes.js # Routes for all API endpoints, including the guide
-   ├── server.js # Main server file
-   └── README.md # Project documentation
-   Error Handling
-   This project uses middleware to handle errors and ensure proper responses. If any issue occurs (e.g., missing input or invalid binary), the API will respond with an appropriate error message.
+4. Open your browser and navigate to [http://localhost:5000](http://localhost:5000) to view the API guide.
 
-Contributing
-Contributions are welcome! Please follow these steps:
+---
 
-Fork the repository.
-Create a new branch (git checkout -b feature/YourFeature).
-Commit your changes (git commit -m 'Add your feature').
-Push to the branch (git push origin feature/YourFeature).
-Open a pull request.
-License
-This project is licensed under the MIT License. See the LICENSE file for more details.
+## Usage
 
-Author
-Developed with ❤️ by Mohammed Imran.
+### Endpoints
+
+#### 1. **API Guide**
+   - **Endpoint:** `GET /`
+   - **Description:** Displays a list of available API routes and their usage.
+
+#### 2. **Convert String to Binary**
+   - **Endpoint:** `POST /binario/api/string-to-binary`
+   - **Request Body:**
+     ```json
+     {
+       "text": "hello"
+     }
+     ```
+   - **Response:**
+     ```json
+     {
+       "binary": "1101000 1100101 1101100 1101100 1101111"
+     }
+     ```
+
+#### 3. **Convert Binary to String**
+   - **Endpoint:** `POST /binario/api/binary-to-string`
+   - **Request Body:**
+     ```json
+     {
+       "binary": "1101000 1100101 1101100 1101100 1101111"
+     }
+     ```
+   - **Response:**
+     ```json
+     {
+       "text": "hello"
+     }
+     ```
+
+---
+
+## Folder Structure
+
+```
+├── Controllers
+│   └── binarioController.js  # Contains logic for string-to-binary and binary-to-string conversion, and the API guide
+├── Routes
+│   └── binarioRoute.js       # Defines API routes
+├── server.js                 # Main server file
+└── README.md                 # Project documentation
+```
+
+---
+
+## Contributing
+
+Contributions are welcome! To contribute:
+
+1. Fork the repository.
+2. Create a new branch: `git checkout -b feature/YourFeature`.
+3. Commit your changes: `git commit -m 'Add your feature'`.
+4. Push to the branch: `git push origin feature/YourFeature`.
+5. Submit a pull request.
+
+---
+
+## License
+
+This project is licensed under the MIT License. See the `LICENSE` file for details.
+
+---
+
+## Author
+
+Developed with ❤️ by [Mohammed Imran](https://github.com/AMOHAMMEDIMRAN).
+```
+
+---
+
+### Updates:
+- Added the GitHub clone link: `https://github.com/AMOHAMMEDIMRAN/Binario.git`.
+- Updated the repository name in installation instructions. 
+
+Let me know if you need further assistance! 😊
