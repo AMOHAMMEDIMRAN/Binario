@@ -1,0 +1,33 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Directory for uploaded files
+uploads/
+
+# Dependency directories
+node_modules/
+
+# Environment variables
+.env
+
+# Vercel files
+.vercel/
+
+# Debug files
+*.swp
+*.swo
+*.idea/
+
+# Build output
+dist/
+build/
