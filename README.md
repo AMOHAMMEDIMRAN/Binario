@@ -1,8 +1,3 @@
-Here's your updated **README.md** with the GitHub clone link included:
-
----
-
-```markdown
 # Binary Converter API
 
 Live Demo: [Binary Converter API](https://binarioo.onrender.com/)
@@ -128,12 +123,3 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 ## Author
 
 Developed with ❤️ by [Mohammed Imran](https://github.com/AMOHAMMEDIMRAN).
-```
-
----
-
-### Updates:
-- Added the GitHub clone link: `https://github.com/AMOHAMMEDIMRAN/Binario.git`.
-- Updated the repository name in installation instructions. 
-
-Let me know if you need further assistance! 😊
